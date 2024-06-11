@@ -22,7 +22,7 @@ Book List
         elif main == '2':
             number = 1               
             for i in library:                    
-                    print(f'Book {number}:', i[0], "By ", i[1], )    
+                    print(f'Book {number}:', i[0], "by", i[1], )    
                     number += 1   # View list
         elif main == '3':
              break
@@ -33,7 +33,7 @@ Book List
 def add():
         T1 = input("What is the Title of the book?\n").title()      
         for title, author in library:
-             if T1 == title:
+             if T1 in title:
                   print("Provide a book we dont already have!")
                   return
              
